@@ -8,17 +8,18 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "Nearily Board",
+    name: "Board",
     platforms: [
-        .iOS("16.0")
+        .iOS("17.0")
     ],
     products: [
         .iOSApplication(
-            name: "Nearily Board",
+            name: "Board",
             targets: ["AppModule"],
-            bundleIdentifier: "com.nearily.board",
+            bundleIdentifier: "com.nearily.developer",
+            teamIdentifier: "Y8DR63X5R9",
             displayVersion: "1.0",
-            bundleVersion: "1",
+            bundleVersion: "4",
             appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
@@ -33,7 +34,8 @@ let package = Package(
             ],
             capabilities: [
                 .outgoingNetworkConnections()
-            ]
+            ],
+            appCategory: .developerTools
         )
     ],
     dependencies: [
